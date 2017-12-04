@@ -1,0 +1,53 @@
+page-home {
+
+    .scroll-content {
+        margin-top: 0 !important;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+      }
+      
+      ion-item {
+        border-radius: 3px !important;
+        padding-left: 10px !important;
+        margin-bottom: 15px !important;
+        margin-bottom: 10px;
+        color: rgb(255, 255, 255) !important;
+        background-color: rgba(8, 8, 8, 0.2) !important;
+        font-size: 0.9em;
+        
+      }
+      
+      .logo {
+        width: 70%;
+        height: auto;
+        margin-bottom: 15vh;
+        padding-top: 9vh;
+      }
+   
+      .slide-background {
+        border-color: transparent;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+   
+       ::-webkit-input-placeholder {
+        color: white !important;
+      }
+      
+      .login-container {
+        position: absolute;
+        z-index: 2;
+        top: 0;
+   
+        width: 100%;
+        margin: 0 auto;
+        padding: 10vw;
+   
+        text-align: center;
+   
+        color: white;
+      } 
+
+}

@@ -1,0 +1,43 @@
+
+<ion-header>
+  
+    <ion-navbar>
+      <ion-title>Emergency's</ion-title>
+  
+      
+    </ion-navbar>
+  
+  </ion-header>
+  
+  
+  <ion-content padding>
+    
+      <ion-list>
+        <ion-item-sliding *ngFor="let emergency of emergencys | async">
+    
+          <ion-item>
+            <h1>{{emergency.name}}</h1>
+            <p>{{emergency.tel}}</p>
+          </ion-item>
+    
+          <ion-item-options side="left">
+              <button ion-fab color="secondary" (click)="editEmergency(emergency)">
+                  <ion-icon name="create"></ion-icon>
+                </button>
+    
+                <button ion-fab color="primary" (click)="removeEmergency(emergency.key)">
+                    <ion-icon name="trash"></ion-icon>
+                  </button>
+          </ion-item-options>
+        </ion-item-sliding>
+      </ion-list>
+  
+      <ion-fab bottom right>
+        <button ion-fab color="primary" (click)="newEmergency()">
+          <ion-icon name="add"></ion-icon>
+        </button>
+      </ion-fab>
+    
+      
+    </ion-content>
+  
